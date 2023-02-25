@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-[1.5rem];
+    }
+}
+
+@layer utilities {
+    .gradient-heading {
+        @apply from-primary bg-gradient-to-r to-[#EAC130] bg-clip-text text-transparent;
+    }
+}
+
+@layer utilities {
+    .grid-auto-layout {
+        @apply grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-8;
+    }
+}
